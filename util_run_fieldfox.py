@@ -12,16 +12,19 @@ inst_name = "MyFieldFox"
 inst_addr = "TCPIP0::192.168.1.135::inst0::INSTR"  # Replace with your instrument's VISA address
 
 trace_number = 1
-measurement = "S21"
-power = -20 # dBm
-freq_start = 2.3e9 # Hz
+measurement = "S11"
+power = -45 # dBm
+freq_start = 2.5e9 # Hz
 freq_stop = 3.0e9 # Hz
 num_points = 601
 avg_number = 50
 wait_time = 10 # seconds
 
+
+
+
 file_dir = './Data'
-file_name = timestamp + '_port12.csv'
+file_name = timestamp + '_cable 2_'+str(power)+'.csv'
 file_path = os.path.join(file_dir, file_name)
 
 

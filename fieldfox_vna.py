@@ -216,8 +216,8 @@ class FieldFox(SCPIInstrument):
 
         return ins_settings_lines
 
-    def read_csv_data(self, file_dir, file_path):
-        with open(os.path.join(file_dir, file_path), 'r') as fp:
+    def read_csv_data(self, file_dir, file_name):
+        with open(os.path.join(file_dir, file_name), 'r') as fp:
             reader = csv.reader(fp)
     
             # Skip the first 31 lines
